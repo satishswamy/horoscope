@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <meta charset="utf-8">
+  <title>Horoscope</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href='styles1.css'>
+  <script src="https://kit.fontawesome.com/bf4e7adee1.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/bf4e7adee1.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <section id="title">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="">Horoscope</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Get your future horoscope prediction daily.</h1>
+          <button type="button" class="Download-button btn btn-dark btn-lg dbutton"><i class="fab fa-apple"></i>
+            Download</button>
+          <button type="button" class="Download-button btn btn-outline-light btn-lg dbutton"><i
+              class="fab fa-google-play"></i> Download</button>
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQuKgvq2RnfJZqUTjJRvYjt16lJk7RWD1xw_DPvCer8I1G6VzaU&usqp=CAU"
+            class="img-title" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="padding: 10% 20% 0%;">
+
+    <form action="/" method="post">
+      <div class="form-row">
+        <div class="col-md-3">
+          <label for="validationDefault01">Full name</label>
+          <input type="text" class="form-control" id="validationDefault01" name="fname" value="Srishaa Satish" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault02">Date of birth</label>
+          <input type="date" class="form-control" id="validationDefault02" name="dob" value="2009-10-29" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault02">Time of birth</label>
+          <input type="time" class="form-control" id="validationDefault02" name="tob" value="21:16" required>
+        </div>
+        <!-- <div class="col-md-3">
+          <label for="validationDefault02">Gender</label>
+          <input type="input" class="form-control" id="validationDefault02" name="sex" value="Female" required>
+        </div> -->
+        <div class="col-md-3">
+          <label for="validationDefault04">Gender</label>
+          <select class="custom-select" id="validationDefault04" name="sex" required>
+            <option selected enabled value="">Choose ...</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <br>
+      </div>
+      <div class="form-row">
+        <div class="col-md-3">
+          <label for="validationDefault03">Address</label>
+          <input type="text" class="form-control" id="validationDefault03" name ="add" value="1106 Twin Cir Dr" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault03">City</label>
+          <input type="text" class="form-control" id="validationDefault03" name ="pob" value="South Windsor" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault03">State</label>
+          <input type="text" class="form-control" id="validationDefault03" name ="sob" value="Connecticut" required>
+        </div>
+        <!-- <div class="col-md-3">
+          <label for="validationDefault04">State</label>
+          <select class="custom-select" id="validationDefault04" name="sob" required>
+            <option selected enabled value="">Choose ...</option>
+            <option>Alabama</option>
+            <option>Alaska</option>
+            <option>Arizona</option>
+            <option>Arkansas</option>
+            <option>California</option>
+            <option>Colorado</option>
+            <option>Connecticut</option>
+            <option>Delaware</option>
+            <option>Florida</option>
+            <option>Georgia</option>
+            <option>Hawaii</option>
+            <option>Idaho</option>
+            <option>IllinoisIndiana</option>
+            <option>Iowa</option>
+            <option>Kansas</option>
+            <option>Kentucky</option>
+            <option>Louisiana</option>
+            <option>Maine</option>
+            <option>Maryland</option>
+            <option>Massachusetts</option>
+            <option>Michigan</option>
+            <option>Minnesota</option>
+            <option>Mississippi</option>
+            <option>Missouri</option>
+            <option>Montana</option>
+            <option>Nebraska</option>
+            <option>Nevada</option>
+            <option>New Hampshire</option>
+            <option>New Jersey</option>
+            <option>New Mexico</option>
+            <option>New York</option>
+            <option>North Carolina</option>
+            <option>North Dakota</option>
+            <option>Ohio</option>
+            <option>Oklahoma</option>
+            <option>Oregon</option>
+            <option>PennsylvaniaRhode Island</option>
+            <option>South Carolina</option>
+            <option>South Dakota</option>
+            <option>Tennessee</option>
+            <option>Texas</option>
+            <option>Utah</option>
+            <option>Vermont</option>
+            <option>Virginia</option>
+            <option>Washington</option>
+            <option>West Virginia</option>
+            <option>Wisconsin</option>
+            <option>Wyoming</option>
+          </select>
+        </div> -->
+        <div class="col-md-3">
+          <label for="validationDefault05">Country</label>
+          <input type="text" class="form-control" id="validationDefault05" name="country" value="USA" required>
+        </div>
+        <br>
+        <div class="col-md-3">
+          <label for="validationDefault05">Zip</label>
+          <input type="text" class="form-control" id="validationDefault05" name="zip" value="06074" required>
+        </div>
+        <div class="col-md-9">
+          <label for="validationDefault03">Email address:</label>
+          <input type="email" class="form-control" id="validationDefault03" name="email" value="srishaa.satish@gmail.com" required>
+        </div>
+      </div>
+      <br>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="checked" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+            Agree to terms and conditions
+          </label>
+        </div>
+      </div>
+      <br>
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+      <script src='index.js' charset="utf-8"></script>
+  </section>
+  <!-- Footer -->
+
+  <footer id="footer">
+    <div class="social">
+      <i class="fab fa-twitter social-img"></i>
+      <i class="fab fa-facebook-square social-img"></i>
+      <i class="fab fa-instagram-square social-img"></i>
+      <i class="fas fa-envelope social-img"></i>
+    </div>
+    <p>© Copyright 2020 Horoscope</p>
+
+  </footer>
+
+</body>
+
+</html>
